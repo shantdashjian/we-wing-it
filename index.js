@@ -25,7 +25,7 @@ document.addEventListener('submit', (e) => {
 
 async function fetchReply(){
     const response = await openai.createCompletion({
-        model: 'davinci:ft-personal-2023-08-30-10-40-17',
+        model: 'davinci:ft-personal-2023-08-30-17-43-54',
         prompt: conversationStr,
         presence_penalty: 0,
         frequency_penalty: 0.3,
