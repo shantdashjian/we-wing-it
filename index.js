@@ -32,7 +32,8 @@ async function fetchReply() {
     },
     body: conversationStr
   })
-  console.log(response)
+  const data = await response.json()
+  console.log(data)
   /*
   Challenge:
     1. Make a fetch request to the url using the 
