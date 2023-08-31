@@ -24,7 +24,7 @@ document.addEventListener('submit', (e) => {
 })
 
 async function fetchReply() {
-  const url = 'https://deft-smakager-03b2a5.netlify.app/.netlify/functions/fetchAI'
+  const url = 'https://we-wing-it.netlify.app/.netlify/functions/fetchAI'
   const response = await fetch(url, {
     method: 'POST',
     headers: {
