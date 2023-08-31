@@ -25,11 +25,10 @@ async function fetchReply() {
     body: conversationStr
   })
   const data = await response.json()
-  console.log(data)
+  const message = data.reply.choices[0].text
   
-  
-  // conversationStr += ` ${response.data.choices[0].text} \n`
-  // renderTypewriterText(response.data.choices[0].text)
+  conversationStr += ` ${message} \n`
+  renderTypewriterText(message)
 }
 
 function renderTypewriterText(text) {
